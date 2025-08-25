@@ -499,44 +499,43 @@
 
 ;;;;; fill-column-indicator
    `(fci-rule-color                               ((t (:foreground ,highlight-alt))))
-   `(fill-column-indicator                        ((t (:foreground ,highlight-alt)))))
+   `(fill-column-indicator                        ((t (:foreground ,highlight-alt))))
 
 ;;;;; tab-bar
-  `(tab-bar ((t (:background ,bg-alt :foreground ,fg :box nil))))
-  `(tab-bar-tab ((t (:foreground ,fg :weight bold
-                     :underline (:color ,acme-yellow :style line)
-                     :overline (:color ,acme-yellow-light :style wave)
-                     :box nil))))
-  `(tab-bar-tab-inactive ((t (:background ,bg-alt :foreground ,fg :slant italic
-                              :box nil :overline (:color ,fg-light :style wave)))))
-  `(tab-bar-tab-group-current ((t (:foreground ,acme-blue :weight bold
-                                   :underline (:color ,acme-blue :style line)
-                                   :overline (:color ,acme-yellow-light :style wave)
-                                   :box nil))))
-  `(tab-bar-tab-group-inactive ((t (:background ,bg-alt :foreground ,acme-blue :slant italic
-                                    :box nil :overline (:color ,fg-light :style wave)))))
-  `(tab-bar-tab-ungrouped ((t (:background ,bg-alt :foreground ,acme-cyan :slant italic :box nil))))
+   `(tab-bar ((t (:background ,bg-alt :foreground ,fg :box nil))))
+   `(tab-bar-tab ((t (:foreground ,fg :weight bold
+                      :underline (:color ,acme-yellow :style line)
+                      :overline (:color ,acme-yellow-light :style wave)
+                      :box nil))))
+   `(tab-bar-tab-inactive ((t (:background ,bg-alt :foreground ,fg :slant italic
+                               :box nil :overline (:color ,fg-light :style wave)))))
+   `(tab-bar-tab-group-current ((t (:foreground ,acme-blue :weight bold
+                                    :underline (:color ,acme-blue :style line)
+                                    :overline (:color ,acme-yellow-light :style wave)
+                                    :box nil))))
+   `(tab-bar-tab-group-inactive ((t (:background ,bg-alt :foreground ,acme-blue :slant italic
+                                     :box nil :overline (:color ,fg-light :style wave)))))
+   `(tab-bar-tab-ungrouped ((t (:background ,bg-alt :foreground ,acme-cyan :slant italic :box nil))))
 
 ;;;;; tab-line
-  `(tab-line ((t (:background ,bg-alt :foreground ,fg :box nil))))
-  `(tab-line-tab ((t (:background ,bg-alt :foreground ,fg :box nil :underline nil :overline nil))))
-  `(tab-line-tab-current ((t (:background ,highlight :foreground ,fg :weight bold :box nil
-                              :overline (:color ,highlight-alt :style wave)
-                              :underline (:color ,acme-blue-light :style line)))))
-  `(tab-line-tab-inactive ((t (:background ,bg-alt :foreground ,fg-light :box nil :slant italic
-                               :overline (:color ,bg-dark :style wave)))))
-  `(tab-line-tab-inactive-alternate ((t (:background ,bg-alt :foreground ,fg-alt :box nil :slant italic
-                                         :overline (:color ,bg-dark :style wave)))))
-  `(tab-line-tab-group ((t (:background ,bg-alt :foreground ,acme-cyan :weight normal :box nil))))
-  `(tab-line-highlight
-    ((t (:background ,highlight-alt :foreground ,fg :box nil))))
-  `(tab-line-tab-modified ((t (:background ,bg-alt :foreground ,acme-yellow :weight normal :box nil
-                               :underline (:color ,acme-yellow-light :style line)))))
-  `(tab-line-tab-special ((t (:background ,bg-alt :foreground ,acme-purple :weight normal :box nil
-                              :overline (:color ,acme-purple-light :style wave)))))
-  `(tab-line-close-highlight ((t (:foreground ,acme-red :background ,bg-alt :weight normal :box nil
-                                  :underline (:color ,acme-red-light :style line)))))
-  )
+   `(tab-line ((t (:background ,bg-alt :foreground ,fg :box nil))))
+   `(tab-line-tab ((t (:background ,bg-alt :foreground ,fg :box nil :underline nil :overline nil))))
+   `(tab-line-tab-current ((t (:background ,highlight :foreground ,fg :weight bold :box nil
+                               :overline (:color ,highlight-alt :style wave)
+                               :underline (:color ,acme-blue-light :style line)))))
+   `(tab-line-tab-inactive ((t (:background ,bg-alt :foreground ,fg-light :box nil :slant italic
+                                :overline (:color ,bg-dark :style wave)))))
+   `(tab-line-tab-inactive-alternate ((t (:background ,bg-alt :foreground ,fg-alt :box nil :slant italic
+                                          :overline (:color ,bg-dark :style wave)))))
+   `(tab-line-tab-group ((t (:background ,bg-alt :foreground ,acme-cyan :weight normal :box nil))))
+   `(tab-line-highlight
+     ((t (:background ,highlight-alt :foreground ,fg :box nil))))
+   `(tab-line-tab-modified ((t (:background ,bg-alt :foreground ,acme-yellow :weight normal :box nil
+                                :underline (:color ,acme-yellow-light :style line)))))
+   `(tab-line-tab-special ((t (:background ,bg-alt :foreground ,acme-purple :weight normal :box nil
+                               :overline (:color ,acme-purple-light :style wave)))))
+   `(tab-line-close-highlight ((t (:foreground ,acme-red :background ,bg-alt :weight normal :box nil
+                                   :underline (:color ,acme-red-light :style line)))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
