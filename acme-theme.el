@@ -240,10 +240,10 @@
    `(erc-highlight-face                           ((t (:background ,highlight))))
    `(erc-input-face                               ((t (:foreground ,fg :background ,bg-alt))))
    `(erc-current-nick-face                        ((t (:foreground ,fg :background ,acme-cyan-light :weight normal
-                                                                   :box (:line-width 1 :style released-button)))))
+                                                       :box (:line-width 1 :style released-button)))))
    `(erc-nick-default-face                        ((t (:weight normal :background ,bg-alt))))
    `(erc-my-nick-face                             ((t (:foreground ,fg :background ,acme-cyan-light :weight normal
-                                                                   :box (:line-width 1 :style released-button)))))
+                                                       :box (:line-width 1 :style released-button)))))
    `(erc-nick-msg-face                            ((t (:inherit erc-default))))
    `(erc-fool-face                                ((t (:inherit erc-default))))
    `(erc-pal-face                                 ((t (:foreground ,acme-purple :weight normal))))
@@ -255,7 +255,7 @@
 
 ;;;;; flx
    `(flx-highlight-face                           ((t (:foreground ,acme-yellow :background ,acme-green-light
-                                                                   :weight normal :underline t))))
+                                                       :weight normal :underline t))))
 
 ;;;;; company
    `(company-tooltip                              ((t (:background ,acme-blue-light))))
@@ -294,7 +294,7 @@
    `(ido-vertical-first-match-face                ((t (:foreground ,fg :background ,acme-cyan-light :weight normal))))
    `(ido-vertical-only-match-face                 ((t (:foreground ,acme-red :background ,acme-red-light :weight normal))))
    `(ido-vertical-match-face                      ((t (:foreground ,fg :background ,acme-green-light
-                                                                   :weight normal :underline t))))
+                                                       :weight normal :underline t))))
 
 ;;;;; indent-guide
    `(indent-guide-face                            ((t (:foreground ,highlight))))
@@ -325,7 +325,7 @@
 
 ;;;;; magit
    `(magit-section-heading                        ((t (:foreground ,acme-cyan :background ,acme-blue-light
-                                                                   :weight normal :underline t))))
+                                                       :weight normal :underline t))))
    `(magit-section-highlight                      ((t (:background ,bg-alt))))
    `(magit-section-heading-selection              ((t (:background ,highlight))))
    `(magit-filename                               ((t (:foreground ,fg))))
@@ -334,12 +334,12 @@
    `(magit-refname                                ((t (:foreground ,acme-purple :weight normal))))
    `(magit-head                                   ((t (:foreground ,acme-green :weight normal))))
    `(magit-branch-local                           ((t (:foreground ,acme-blue :background ,acme-blue-light
-                                                                   :weight normal))))
+                                                       :weight normal))))
    `(magit-branch-remote                          ((t (:foreground ,acme-green :background ,acme-green-light
-                                                                   :weight normal))))
+                                                       :weight normal))))
    `(magit-branch-current                         ((t (:foreground ,acme-cyan :background ,acme-cyan-light
-                                                                   :weight normal
-                                                                   :box (:line-width 1 :color ,acme-cyan)))))
+                                                       :weight normal
+                                                       :box (:line-width 1 :color ,acme-cyan)))))
    `(magit-diff-file-heading                      ((t (:foreground ,fg :weight normal))))
    `(magit-diff-file-heading-highlight            ((t (:background ,bg-alt))))
    `(magit-diff-file-heading-selection            ((t (:foreground ,acme-red :background ,highlight))))
@@ -427,7 +427,7 @@
 ;;;;; yascroll
    `(yascroll:thumb-text-area                     ((t (:background ,highlight))))
    `(yascroll:thumb-fringe                        ((t (:background ,bg :foreground ,bg
-                                                                   :box (:line-width 1 :style released-button)))))
+                                                       :box (:line-width 1 :style released-button)))))
 
 ;;;;; Org
    `(org-level-1                                  ((t (:background ,acme-blue-light :foreground ,acme-blue :weight bold :overline t))))
@@ -459,7 +459,7 @@
 
 ;;;;; origami
    `(origami-fold-replacement-face                ((t (:foreground ,acme-red :background ,acme-red-light
-                                                                   :box (:line-width -1)))))
+                                                       :box (:line-width -1)))))
 
 ;;;;; git-gutter
    `(git-gutter:added                             ((t (:background ,acme-green-alt :foreground ,acme-green-alt :weight normal))))
@@ -499,7 +499,44 @@
 
 ;;;;; fill-column-indicator
    `(fci-rule-color                               ((t (:foreground ,highlight-alt))))
-   `(fill-column-indicator                        ((t (:foreground ,highlight-alt))))))
+   `(fill-column-indicator                        ((t (:foreground ,highlight-alt)))))
+
+;;;;; tab-bar
+  `(tab-bar ((t (:background ,bg-alt :foreground ,fg :box nil))))
+  `(tab-bar-tab ((t (:foreground ,fg :weight bold
+                     :underline (:color ,acme-yellow :style line)
+                     :overline (:color ,acme-yellow-light :style wave)
+                     :box nil))))
+  `(tab-bar-tab-inactive ((t (:background ,bg-alt :foreground ,fg :slant italic
+                              :box nil :overline (:color ,fg-light :style wave)))))
+  `(tab-bar-tab-group-current ((t (:foreground ,acme-blue :weight bold
+                                   :underline (:color ,acme-blue :style line)
+                                   :overline (:color ,acme-yellow-light :style wave)
+                                   :box nil))))
+  `(tab-bar-tab-group-inactive ((t (:background ,bg-alt :foreground ,acme-blue :slant italic
+                                    :box nil :overline (:color ,fg-light :style wave)))))
+  `(tab-bar-tab-ungrouped ((t (:background ,bg-alt :foreground ,acme-cyan :slant italic :box nil))))
+
+;;;;; tab-line
+  `(tab-line ((t (:background ,bg-alt :foreground ,fg :box nil))))
+  `(tab-line-tab ((t (:background ,bg-alt :foreground ,fg :box nil :underline nil :overline nil))))
+  `(tab-line-tab-current ((t (:background ,highlight :foreground ,fg :weight bold :box nil
+                              :overline (:color ,highlight-alt :style wave)
+                              :underline (:color ,acme-blue-light :style line)))))
+  `(tab-line-tab-inactive ((t (:background ,bg-alt :foreground ,fg-light :box nil :slant italic
+                               :overline (:color ,bg-dark :style wave)))))
+  `(tab-line-tab-inactive-alternate ((t (:background ,bg-alt :foreground ,fg-alt :box nil :slant italic
+                                         :overline (:color ,bg-dark :style wave)))))
+  `(tab-line-tab-group ((t (:background ,bg-alt :foreground ,acme-cyan :weight normal :box nil))))
+  `(tab-line-highlight
+    ((t (:background ,highlight-alt :foreground ,fg :box nil))))
+  `(tab-line-tab-modified ((t (:background ,bg-alt :foreground ,acme-yellow :weight normal :box nil
+                               :underline (:color ,acme-yellow-light :style line)))))
+  `(tab-line-tab-special ((t (:background ,bg-alt :foreground ,acme-purple :weight normal :box nil
+                              :overline (:color ,acme-purple-light :style wave)))))
+  `(tab-line-close-highlight ((t (:foreground ,acme-red :background ,bg-alt :weight normal :box nil
+                                  :underline (:color ,acme-red-light :style line)))))
+  )
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
