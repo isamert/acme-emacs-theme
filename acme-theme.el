@@ -127,7 +127,7 @@
    `(vertical-border                              ((t (:foreground ,acme-cyan))))
 
 ;;;;; font lock
-   `(font-lock-builtin-face                       ((t (:foreground ,fg :weight normal))))
+   `(font-lock-builtin-face                       ((t (:foreground ,acme-purple :weight bold))))
    `(font-lock-function-name-face                 ((t (:foreground ,fg :weight normal))))
    `(font-lock-string-face                        ((t (:foreground ,acme-red))))
    `(font-lock-keyword-face                       ((t (:foreground ,acme-blue :weight bold)))) ; if, else, for, while, return...
